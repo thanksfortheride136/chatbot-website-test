@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS AI Chat</title>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>ATLAS AI Chat</h1>
+    <textarea id="chatHistory" rows="10" cols="50" readonly></textarea><br>
+    <input type="text" id="userInput">
+    <button onclick="sendMessage()">Send</button>
+</body>
+</html>
+
