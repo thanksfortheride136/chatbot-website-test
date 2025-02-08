@@ -6,7 +6,7 @@ async function sendMessage() {
     document.getElementById("userInput").value = "";
 
     try {
-        let response = await fetch("http://127.0.0.1:5000/ask", {
+        let response = await fetch("https://atlas-backend.onrender.com/ask", {  // Use your Render API URL
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question: userInput })
