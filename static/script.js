@@ -6,7 +6,7 @@ async function sendMessage() {
     document.getElementById("userInput").value = "";
 
     try {
-        let response = await fetch("https://atlas-backend.onrender.com/ask", {  // Use your Render API URL
+        let response = await fetch("https://chatbot-website-test.onrender.com", {  // Use your Render API URL
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question: userInput })
